@@ -15,7 +15,7 @@ public class User {
 
     private String username;
 
-    private int email;
+    private String email;
     //TODO поменять мыло на стринг
 
     private String password;

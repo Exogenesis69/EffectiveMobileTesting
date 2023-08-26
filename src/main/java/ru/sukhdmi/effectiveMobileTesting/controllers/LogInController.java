@@ -1,5 +1,6 @@
 package ru.sukhdmi.effectiveMobileTesting.controllers;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/auth")
+@Tag(name = "Пользовательское API", description = "API операций по регистрации и аутентификации пользователей.")
 public class LogInController {
 
     private final RegistrationService registrationService;
